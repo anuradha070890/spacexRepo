@@ -81,7 +81,7 @@
 @media only screen and (min-width: 768px){
   .card{
     background-color: white;
-      margin: 1.3rem;
+      margin: 0.5rem;
       /* width: 13%; */
   }
 
@@ -177,7 +177,7 @@
     /* For desktop: */
     .card{
       background-color: white;
-        margin: 1.3rem;
+        margin: 0.5rem;
         /* width: 13%; */
     }
 

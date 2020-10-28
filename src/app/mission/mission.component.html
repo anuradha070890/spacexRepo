@@ -76,7 +76,7 @@
           [mission_id]="d.mission_id"
           [launch_year]="d.launch_year"
           [launch_success]="d.launch_success"
-          [launch_landing]="d.launch_landing"
+          [launch_landing]="d.rocket.first_stage.cores[0].land_success"
           [mission_name]="d.mission_name"
           [img]="d.links.mission_patch_small"
         ></app-card>
