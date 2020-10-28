@@ -1,0 +1,112 @@
+@media screen and (min-width: 320px)and (max-width : 640px){
+  .card{
+    background-color: white;
+      margin: 1.3rem;
+    }
+  
+    .imgageBg{
+      background-color: #F2F2F2;
+    }
+  
+    .image{
+      width: 95%;
+      height: auto;
+      padding: 7% 7% 7% 7%;
+    }
+  
+    .text{
+      font-size: 20px;
+      padding: 1em 0 3em 0;
+      font-weight: 900 !important;
+    }
+  
+    .textContent{
+      font-size: 20px;
+      padding: 1em 0 2em 0;
+      text-transform: capitalize;
+    }
+    .coloredText{
+      font-size: 20px;
+      padding: 1em 0 3em 0;
+      font-weight: 900 !important;
+      color:#46508D;
+    }
+  
+}
+
+
+  @media only screen and (min-width: 768px) {
+    .card{
+      background-color: white;
+        margin: 0.5rem;
+        height: 97%;
+        /* width: 13%; */
+        /* display: flex */
+    }
+    .imgageBg{
+      background-color: #F2F2F2;
+    }
+
+    .text{
+      font-size: 24px;
+      padding: 1em 0 3em 0;
+      font-weight: 500 !important;
+    }
+    .textContent{
+      font-size: 24px;
+      padding: 1em 0 2em 0;
+      text-transform: capitalize;
+    }
+    .coloredText{
+      font-size: 24px;
+      padding: 1em 0 3em 0;
+      font-weight: 500 !important;
+      color:#46508D;
+    }
+
+    .image{
+      width: 100%;
+      margin: 0em;
+      height: auto;
+      padding: 7% 7% 7% 7%;
+    }
+      
+  }
+
+  @media only screen and (min-width: 1025px){
+    .card{
+      background-color: white;
+        margin: 0.5rem;
+        height: 97%;
+        /* width: 13%; */
+        /* display: flex */
+    }
+    .text{
+      font-size: 16px;
+      padding: 1em 0 3em 0;
+      font-weight: 500 !important;
+    }
+    .textContent{
+      font-size: 16px;
+      padding: 1em 0 2em 0;
+      text-transform: capitalize;
+    }
+    .coloredText{
+      font-size: 16px;
+      padding: 1em 0 3em 0;
+      font-weight: 500 !important;
+      color:#46508D;
+    }
+
+    .image{
+      /* width: 90%; */
+      margin: 0em;
+      height: auto;
+      /* max-width: 10%; */
+      padding: 7% 7% 7% 7%;
+    }
+    .imgageBg{
+      background-color: #F2F2F2;
+    }
+  }
+

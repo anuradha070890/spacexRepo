@@ -1,0 +1,93 @@
+<div class="mainContainer">
+  <header class="header">SpaceX Launch Programs</header>
+  <div class="class0">
+    <div>
+      <mat-card class="card">
+        <h2 class="h2_tag">Filters</h2>
+        <div>
+          <h5 class="text">Launch Year</h5>
+          <div class="btn" style="column-count: 2">
+            <div
+              *ngFor="let btn of button; let i = index"
+              (click)="onYearClick(btn, i)"
+            >
+              <button
+                [ngClass]="{
+                  highlight: selectedIndex === i,
+                  button: selectedIndex !== i
+                }"
+              >
+                {{ btn }}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div>
+          <h5 class="text">
+            Successful Launch
+          </h5>
+          <div class="buttonStyle">
+            <div
+              *ngFor="let btn of launchButton; let i = index"
+              (click)="onLaunchClick(btn, i)"
+            >
+              <button
+                [ngClass]="{
+                  highlight: selectedIndex2 === i,
+                  button: selectedIndex2 !== i
+                }"
+              >
+                {{ btn }}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div>
+          <h5 class="text">
+            Successful Landing
+          </h5>
+          <div class="buttonStyle">
+            <div
+              *ngFor="let btn of launchLanding; let i = index"
+              (click)="onLaunchLandingClick(btn, i)"
+            >
+              <button
+                [ngClass]="{
+                  highlight: selectedIndex3 === i,
+                  button: selectedIndex3 !== i
+                }"
+              >
+                {{ btn }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="class1">
+      <div *ngFor="let d of data">
+        <app-card
+          [mission_name]="d.mission_name"
+          [flight_number]="d.flight_number"
+          [mission_id]="d.mission_id"
+          [launch_year]="d.launch_year"
+          [launch_success]="d.launch_success"
+          [launch_landing]="d.launch_landing"
+          [mission_name]="d.mission_name"
+          [img]="d.links.mission_patch_small"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span class="footerText">
+      Developed by: &nbsp;
+    </span>
+    Anuradha
+  </footer>
+</div>

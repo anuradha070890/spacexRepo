@@ -1,0 +1,18 @@
+<mat-card class="card">
+  <div class="imgageBg">
+    <img mat-card-image [src]="img" alt="image" class="image" />
+  </div>
+  <mat-card-content>
+    <span class="coloredText"> {{ mission_name }} <span>&nbsp;</span>#{{ flight_number }} </span> <br />
+    <span class="text">Mission Ids</span>
+    <div *ngFor="let id of mission_id" class="textContent">
+      <ul>
+        <li>{{ id }}</li>
+      </ul>
+    </div> <br>
+    <span class="text">launch Year</span> : <span class="textContent">{{ launch_year }}</span> <br />
+    <span class="text">Successful Launch</span> : <span class="textContent">{{ launch_success }}</span> <br />
+    <span class="text">Successful Landing</span>:
+    <span class="text">{{ launch_landing }}</span>
+  </mat-card-content>
+</mat-card>
