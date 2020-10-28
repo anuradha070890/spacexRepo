@@ -77,3 +77,11 @@ Within the angular app folder you have the following structure:
 * `dist` contains build results
 * `src` contains application's sources
 * `vendor` contains external dependencies for the application
+## Deployement 
+### App creation 
+Using Heroku **spacexlaunchprogram** Application is created 
+**spacex-launch-assign** CI& CD Pipeline created for continuous integration and deployement
+connected the Heroku to github master branch
+
+
+
